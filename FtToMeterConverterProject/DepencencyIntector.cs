@@ -17,7 +17,7 @@ namespace FtToMeterConverterProject
 
             //container.RegisterType<IFtStringEvaluator, FtStringEvaluator>();
             //container.RegisterType<IFtStringValidator, FtStringValidator>();
-            container.RegisterType<IFtToMeterConverter, FtToMeterConverter>();
+            container.RegisterType<IFtToMeterConverter, MockFtToMeterConverter>();
         }
     }
 }

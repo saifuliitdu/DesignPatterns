@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace FtToMeterConverterProject
 {
-    public interface IFtStringIntegerPartEvaluator
-    {
-        double EvaluateIntegerPart(string s);
-    }
 
+    public interface IFtStringEvaluator
+    {
+        double Evaluate(string s);
+    }
 }

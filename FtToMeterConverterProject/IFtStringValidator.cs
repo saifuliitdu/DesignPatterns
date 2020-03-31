@@ -10,8 +10,4 @@ namespace FtToMeterConverterProject
     {
         bool Validate(string s);
     }
-    public interface IFtStringEvaluator
-    {
-        double Evaluate(string s);
-    }
 }

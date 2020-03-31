@@ -6,18 +6,21 @@ using System.Threading.Tasks;
 
 namespace FtToMeterConverterProject
 {
-    public class FtStringIntegerPartValidator : IFtStringIntegerPartValidator
+
+    public class FtStringFractionPartValidator : IFtStringFractionPartValidator
     {
-        public bool ValidateIntegerPart(string s)
+        public bool ValidateFractionPart(string s)
         {
             bool returnResult = false;
 
             if (string.IsNullOrEmpty(s)) return returnResult;
 
-            int n = s.IndexOf("'");
-            if (n > 0)
+            int n1 = s.IndexOf("'");
+            int n2 = s.IndexOf("\"");
+
+            if (n1 > 0)
             {
-                long num = Convert.ToInt64(s.Substring(0, n));
+                long num = Convert.ToInt64(s.Substring(n1 + 1, n2 - n1 - 1));
 
                 if (num > 0)
                     returnResult = true;
@@ -27,5 +30,4 @@ namespace FtToMeterConverterProject
             return returnResult;
         }
     }
-
 }
