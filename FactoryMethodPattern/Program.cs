@@ -6,7 +6,7 @@ namespace FactoryMethodPattern
 {
     class Program
     {
-        
+
         static void Main(string[] args)
         {
             //RealLife Example
@@ -14,9 +14,16 @@ namespace FactoryMethodPattern
 
             // Example 1
             //ExecuteExample1();
-            
+
             // Example 3
-            ExecuteExample3();
+            //ExecuteExample3();
+
+            //Problem 2
+            //ExecuteProblem2FactoryPattern();
+
+            //Problem 2 Solution
+            ExecuteProblem2Solution();
+
             Console.ReadKey();
         }
         static void ExecuteExample1()
@@ -77,6 +84,35 @@ namespace FactoryMethodPattern
             Console.WriteLine("Card Type: {0}\nCredit Limit: {1}\nAnnual Charge: {2}",
                 creditCard.CardType, creditCard.CreditLimit, creditCard.AnnualCharge);
             Console.WriteLine();
+        }
+
+        static void ExecuteProblem2FactoryPattern()
+        {
+            Honda objHonda = new Honda();
+            objHonda.GetCarModel();
+
+            BMW objBMW = new BMW();
+            objBMW.GetCarModel();
+
+            // If we want to add new class then we need to modify client code also.
+            Nano objNano = new Nano();
+            objNano.GetCarModel();
+        }
+        static void ExecuteProblem2Solution()
+        {
+            ICarSupplier cs1 = CarFactory.GetCarInstance(0);
+            ICarSupplier cs2 = CarFactory.GetCarInstance(1);
+            ICarSupplier cs3 = CarFactory.GetCarInstance(2);
+            ICarSupplier cs4 = CarFactory.GetCarInstance(3);
+
+            List<ICarSupplier> carSuppliers = new List<ICarSupplier> { cs1, cs2, cs3, cs4 };
+
+            carSuppliers.ForEach(x=> {
+                x.GetCarModel();
+                Console.WriteLine("And Coloar is " + x.CarColor);
+                Console.WriteLine();
+            });
+            
         }
     }
 }
