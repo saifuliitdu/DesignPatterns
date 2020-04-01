@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DecoratorDesignPattern
+namespace DecoratorPattern
 {
     public interface IRepository<T>
     {

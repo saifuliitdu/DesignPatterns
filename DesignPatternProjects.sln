@@ -9,11 +9,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyPatternProject", "S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorProject", "CalculatorProject\CalculatorProject.csproj", "{2B2DC0DD-0486-4453-B536-4C17C32CF302}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorDesignPattern", "DecoratorDesignPattern\DecoratorDesignPattern.csproj", "{C7CEC64E-6891-4083-A864-33721C39BFD4}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{9556F52D-F5A4-4BB0-80B5-5FCB36173E09}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObserverPattern", "ObserverPattern\ObserverPattern.csproj", "{90888D1D-5527-447E-9D76-1423F579679D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethodPattern", "FactoryMethodPattern\FactoryMethodPattern.csproj", "{7FFE8795-733D-42BC-96D3-7D37C43F29ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorPattern", "DecoratorPattern\DecoratorPattern.csproj", "{D5BCDB98-1D03-4506-911D-2D2946E5823E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,10 +35,6 @@ Global
 		{2B2DC0DD-0486-4453-B536-4C17C32CF302}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B2DC0DD-0486-4453-B536-4C17C32CF302}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B2DC0DD-0486-4453-B536-4C17C32CF302}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C7CEC64E-6891-4083-A864-33721C39BFD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C7CEC64E-6891-4083-A864-33721C39BFD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C7CEC64E-6891-4083-A864-33721C39BFD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C7CEC64E-6891-4083-A864-33721C39BFD4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9556F52D-F5A4-4BB0-80B5-5FCB36173E09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9556F52D-F5A4-4BB0-80B5-5FCB36173E09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9556F52D-F5A4-4BB0-80B5-5FCB36173E09}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,6 +43,14 @@ Global
 		{90888D1D-5527-447E-9D76-1423F579679D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90888D1D-5527-447E-9D76-1423F579679D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90888D1D-5527-447E-9D76-1423F579679D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FFE8795-733D-42BC-96D3-7D37C43F29ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FFE8795-733D-42BC-96D3-7D37C43F29ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FFE8795-733D-42BC-96D3-7D37C43F29ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FFE8795-733D-42BC-96D3-7D37C43F29ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5BCDB98-1D03-4506-911D-2D2946E5823E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5BCDB98-1D03-4506-911D-2D2946E5823E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5BCDB98-1D03-4506-911D-2D2946E5823E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5BCDB98-1D03-4506-911D-2D2946E5823E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -7,7 +7,7 @@ using System.Runtime.Remoting.Proxies;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DecoratorDesignPattern
+namespace DecoratorPattern
 {
     public class DynamicProxy<T> : RealProxy
     {
